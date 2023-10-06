@@ -8,9 +8,17 @@ const setEnv = () => {
   // `environment.ts` file structure
   const envConfigFile = `export const environment = {
 //il nome delle APIKEY deve corrispondere a quello del .env
-    API_KEY_AP_FOOT: '${process.env['API_KEY_AP_FOOT']}',
-    API_KEY_FOOT_PRED":'${process.env['API_KEY_FOOT_PRED']}'
+    API_KEY_QUALCOSA: '${process.env['API_KEY_QUALCOSA']}',
   production: true,
+  firebase:{
+    apiKey: ${process.env['apiKey']}
+    authDomain: ${process.env['authDomain']}
+    projectId: ${process.env['projectId']}
+    appId: ${process.env['appId']}
+    storageBucket: ${process.env['storageBucket']}
+    messagingSenderId: ${process.env['messagingSenderId']}
+    measurementId: ${process.env['projectId']}
+  }
 };
 `;
 
