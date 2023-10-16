@@ -1,15 +1,20 @@
 html,
 body {
   height: 100%;
+  overflow: hidden;
 }
 main {
+  overflow: scroll;
+  height: 100vh;
+  scroll-snap-points-y: repeat(100vh);
+  scroll-snap-type: y mandatory;
+  section {
+    height: 100vh;
+    scroll-snap-align: start;
+    position: relative;
+  }
   #welcome {
-    scroll-snap-align: center;
-    // height: 100vh;
     background-color: aqua;
-    div {
-      scroll-snap-type: y mandatory;
-    }
 
     h1 {
       text-align: center;
@@ -18,36 +23,24 @@ main {
   }
 
   #second {
-    scroll-snap-type: y mandatory;
-    // height: 100vh;
     background-color: green;
-    div {
-      scroll-snap-align: center;
-    }
+
     h1 {
       text-align: center;
       padding: 50%;
     }
   }
   #third {
-    scroll-snap-type: y mandatory;
-    // height: 100vh;
-    background-color: green;
-    div {
-      scroll-snap-align: center;
-    }
+    background-color: red;
+
     h1 {
       text-align: center;
       padding: 50%;
     }
   }
   #fourth {
-    scroll-snap-type: y mandatory;
-    // height: 100vh;
-    background-color: green;
-    div {
-      scroll-snap-align: center;
-    }
+    background-color: pink;
+
     h1 {
       text-align: center;
       padding: 50%;

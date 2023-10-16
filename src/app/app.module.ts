@@ -7,9 +7,15 @@ import { initializeApp } from 'firebase/app';
 import { getAnalytics } from 'firebase/analytics';
 import { FooterComponent } from './home/footer/footer/footer.component';
 import { MainSectionComponent } from './home/main-section/main-section.component';
+import { NavbarComponent } from './home/navbar/navbar/navbar.component';
 
 @NgModule({
-  declarations: [AppComponent, FooterComponent, MainSectionComponent],
+  declarations: [
+    AppComponent,
+    FooterComponent,
+    MainSectionComponent,
+    NavbarComponent,
+  ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
   bootstrap: [AppComponent],
