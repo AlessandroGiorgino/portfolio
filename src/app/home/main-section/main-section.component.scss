@@ -5,7 +5,8 @@ body {
 }
 main {
   overflow: scroll;
-  height: 100vh;
+  height: 95vh;
+  // padding-bottom: 10vh;
   scroll-snap-points-y: repeat(100vh);
   scroll-snap-type: y mandatory;
   section {

@@ -1,14 +1,25 @@
 <main>
-  <section appHighlight class="box" id="welcome" dir="ltr">
-    <h1 class="fadeSlow">Hello</h1>
+  <section appTrackVisibility id="welcome" dir="ltr">
+    <div
+      *ngIf="TrackVisibilityDirective && TrackVisibilityDirective.visibleOrNot"
+      class="contentContainer"
+    >
+      <h1 class="fadeSlow">First</h1>
+    </div>
   </section>
   <section id="second" dir="ltr">
-    <h1 class="fadeSlow">Hello</h1>
+    <div class="contentContainer">
+      <h1 class="fadeSlow">Second</h1>
+    </div>
   </section>
   <section id="third" dir="ltr">
-    <h1>Hello</h1>
+    <div class="contentContainer">
+      <h1 class="fadeSlow">Third</h1>
+    </div>
   </section>
   <section id="fourth" dir="ltr">
-    <h1>Hello</h1>
+    <div class="contentContainer">
+      <h1 class="fadeSlow">Fourth</h1>
+    </div>
   </section>
 </main>

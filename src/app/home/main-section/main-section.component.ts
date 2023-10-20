@@ -1,4 +1,11 @@
-import { Component, ElementRef, Renderer2 } from '@angular/core';
+import { TrackVisibilityDirective } from './../../customDirectives/track-visibility.directive';
+import {
+  Component,
+  ElementRef,
+  OnInit,
+  Renderer2,
+  ViewChild,
+} from '@angular/core';
 
 @Component({
   selector: 'app-main-section',
@@ -6,6 +13,8 @@ import { Component, ElementRef, Renderer2 } from '@angular/core';
   styleUrls: ['./main-section.component.scss'],
 })
 export class MainSectionComponent {
+  @ViewChild(TrackVisibilityDirective)
+  TrackVisibilityDirective!: TrackVisibilityDirective;
   // constructor(private element: ElementRef, private renderer: Renderer2) {}
   // inside: any;
   // inViewport(el: any) {
