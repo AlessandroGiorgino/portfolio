@@ -8,6 +8,7 @@ import { getAnalytics } from 'firebase/analytics';
 import { FooterComponent } from './home/footer/footer/footer.component';
 import { MainSectionComponent } from './home/main-section/main-section.component';
 import { NavbarComponent } from './home/navbar/navbar/navbar.component';
+import { HighlightDirective } from './customDirectives/highlight.directive';
 
 @NgModule({
   declarations: [
@@ -15,6 +16,7 @@ import { NavbarComponent } from './home/navbar/navbar/navbar.component';
     FooterComponent,
     MainSectionComponent,
     NavbarComponent,
+    HighlightDirective,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
