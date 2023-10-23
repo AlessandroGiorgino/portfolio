@@ -15,6 +15,19 @@ import {
 export class MainSectionComponent {
   @ViewChild(TrackVisibilityDirective)
   TrackVisibilityDirective!: TrackVisibilityDirective;
+  constructor(private renderer: Renderer2) {}
+
+  //metodo aggiunta còasse con inViweport
+  public onIntersection({
+    target,
+    visible,
+  }: {
+    target: Element;
+    visible: boolean;
+  }): void {
+    this.renderer.addClass(target, visible ? 'active' : 'inactive');
+    this.renderer.removeClass(target, visible ? 'inactive' : 'active');
+  }
   // constructor(private element: ElementRef, private renderer: Renderer2) {}
   // inside: any;
   // inViewport(el: any) {

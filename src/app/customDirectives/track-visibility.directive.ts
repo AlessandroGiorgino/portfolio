@@ -32,7 +32,7 @@ export class TrackVisibilityDirective implements OnInit {
           this.visibleOrNot = e.isIntersecting;
         });
       },
-      { rootMargin: '0px' }
+      { rootMargin: '-50px' }
     );
     this.observer.observe(this.el.nativeElement);
   }

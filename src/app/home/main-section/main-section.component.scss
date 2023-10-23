@@ -5,7 +5,7 @@ body {
 }
 main {
   overflow: scroll;
-  height: 95vh;
+  height: 100vh;
   // padding-bottom: 10vh;
   scroll-snap-points-y: repeat(100vh);
   scroll-snap-type: y mandatory;
@@ -18,8 +18,8 @@ main {
     background-color: aqua;
 
     h1 {
-      text-align: center;
       padding: 50%;
+      text-align: center;
     }
   }
 
@@ -36,7 +36,6 @@ main {
 
     h1 {
       text-align: center;
-      padding: 50%;
     }
   }
   #fourth {
@@ -44,17 +43,81 @@ main {
 
     h1 {
       text-align: center;
-      padding: 50%;
     }
   }
 
-  .fadeSlow {
+  .active {
     -webkit-animation: fade-in 3000ms ease-out both;
     animation: fade-in 3000ms ease-out both;
   }
+  .inactive {
+    display: hidden;
+  }
+
   .fadeFast {
     -webkit-animation: fade-in 3000ms ease-out both;
     animation: fade-in 3000ms ease-out both;
+  }
+}
+
+@media screen and (min-width: 780px) {
+  main {
+    overflow: scroll;
+    height: 100vh;
+    // padding-bottom: 10vh;
+    scroll-snap-points-y: repeat(100vh);
+    scroll-snap-type: y mandatory;
+    section {
+      height: 100vh;
+      scroll-snap-align: start;
+      position: relative;
+    }
+    #welcome {
+      background-color: aqua;
+
+      h1 {
+        padding: 30%;
+        text-align: center;
+      }
+    }
+
+    #second {
+      background-color: green;
+
+      h1 {
+        text-align: center;
+        padding: 30%;
+      }
+    }
+    #third {
+      background-color: red;
+
+      h1 {
+        text-align: center;
+        padding: 30%;
+      }
+    }
+    #fourth {
+      background-color: pink;
+
+      h1 {
+        text-align: center;
+        padding: 30%;
+      }
+    }
+
+    .active {
+      -webkit-animation: fade-in 3000ms ease-out both;
+      animation: fade-in 3000ms ease-out both;
+    }
+    .inactive {
+      display: hidden;
+    }
+
+    .fadeFast {
+      -webkit-animation: fade-in 3000ms ease-out both;
+      animation: fade-in 3000ms ease-out both;
+    }
   }
 }
 @-webkit-keyframes fade-in {

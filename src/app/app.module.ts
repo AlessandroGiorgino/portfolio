@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { InViewportModule } from 'ng-in-viewport';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { initializeApp } from 'firebase/app';
@@ -20,7 +20,7 @@ import { TrackVisibilityDirective } from './customDirectives/track-visibility.di
     HighlightDirective,
     TrackVisibilityDirective,
   ],
-  imports: [BrowserModule, AppRoutingModule],
+  imports: [BrowserModule, AppRoutingModule, InViewportModule],
   providers: [],
   bootstrap: [AppComponent],
 })
