@@ -1,15 +1,17 @@
 <main>
-  <section class="grid justify-center items-stretch" id="welcome" dir="ltr">
+  <section class="grid justify-center items-start" id="welcome" dir="ltr">
     <div
       inViewport
       [inViewportOptions]="{ threshold: [0] }"
       (inViewportAction)="onIntersection($event)"
       class="contentContainer grid justify-center items-start"
     >
-      <h1 class="fadeSlow text-7xl">Hi!</h1>
-      <div class="grid grid-cols-2">
-        <h1 class="fadeSlow">I'm Alessandro,</h1>
-        <h1 class="fadeSlow">a front end developer</h1>
+      <h1 class="fadeSlow text-white text-7xl mt-20">Hi!</h1>
+      <div class="grid">
+        <h1 class="fadeSlow text-white text-3xl mt-20">I'm Alessandro.</h1>
+
+        <!-- <h1 class="fadeSlow text-xl">I'm Alessandro,</h1>
+        <h1 class="fadeSlow text-xl">a front end developer</h1> -->
       </div>
     </div>
   </section>
@@ -20,7 +22,7 @@
       (inViewportAction)="onIntersection($event)"
       class="contentContainer"
     >
-      <h1 class="fadeSlow">Second</h1>
+      <!-- <h1 class="fadeSlow text-white">Programming</h1> -->
     </div>
   </section>
   <section id="third" dir="ltr">
