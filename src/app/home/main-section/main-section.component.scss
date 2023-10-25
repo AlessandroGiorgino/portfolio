@@ -30,13 +30,20 @@ main {
   }
 
   #second {
-    background-color: black;
+    background-image: url("https://64.media.tumblr.com/6cb0ae44278156aa660d95d55df340de/tumblr_nz14o7t0Z61skcd7fo1_500.gif");
+    transform: rotate(180deg);
+    background-size: cover;
+    background-repeat: no-repeat;
     // h1 {
     text-align: center;
     //   padding: 50%;
     // }
   }
   #third {
+    background-color: black;
+    background-size: cover;
+    background-repeat: no-repeat;
+
     //   h1 {
     text-align: center;
     //   }
