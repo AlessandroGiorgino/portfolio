@@ -1,17 +1,25 @@
 <main>
-  <section class="grid justify-center items-start" id="welcome" dir="ltr">
+  <section
+    class="grid justify-center items-start text-center"
+    id="welcome"
+    dir="ltr"
+  >
     <div
       inViewport
       [inViewportOptions]="{ threshold: [0] }"
       (inViewportAction)="onIntersection($event)"
       class="contentContainer grid justify-center items-start"
     >
-      <h1 class="fadeSlow text-white text-7xl mt-20">Hi!</h1>
+      <h1 class="fadeSlow text-white text-7xl mt-28">Hi!</h1>
       <div class="grid">
-        <h1 class="fadeSlow text-white text-3xl mt-20">I'm Alessandro.</h1>
-
-        <!-- <h1 class="fadeSlow text-xl">I'm Alessandro,</h1>
-        <h1 class="fadeSlow text-xl">a front end developer</h1> -->
+        <h2 class="fadeSlow text-white text-4xl mt-10">I'm Alessandro.</h2>
+        <p id="a" class="mb-10 mt-10 text-3xl text-white">a</p>
+        <p id="frontEnd" class="mb-20 text-5xl text-white">
+          Front-End Developer
+        </p>
+        <p class="text-white mt-20 text-2xl">
+          I make websites, just like this one!
+        </p>
       </div>
     </div>
   </section>
@@ -22,7 +30,11 @@
       (inViewportAction)="onIntersection($event)"
       class="contentContainer"
     >
-      <!-- <h1 class="fadeSlow text-white">Programming</h1> -->
+      <article>
+        <p class="text-white text-4xl">These are the tools i work with:</p>
+        <p class="text-white text-4xl">These are the tools i work with:</p>
+        <p class="text-white text-4xl">These are the tools i work with:</p>
+      </article>
     </div>
   </section>
   <section id="third" dir="ltr">

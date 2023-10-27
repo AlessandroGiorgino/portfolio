@@ -3,7 +3,9 @@ body {
   height: 100%;
   // overflow: hidden;
 }
-h1 {
+h1,
+h2,
+p {
   font-family: lilita;
 }
 main {
@@ -23,9 +25,18 @@ main {
     background-size: cover;
     background-repeat: no-repeat;
 
+    #a {
+      opacity: 0;
+      animation: drop 1s linear forwards 0.5s;
+    }
+    #frontEnd {
+      opacity: 0;
+      animation: drop 3.5s linear forwards 1.5s;
+    }
+
     // h1 {
     //   padding: 50%;
-    text-align: center;
+
     // }
   }
 
@@ -34,13 +45,15 @@ main {
     transform: rotate(180deg);
     background-size: cover;
     background-repeat: no-repeat;
-    // h1 {
+    .contentContainer {
+      transform: rotate(180deg);
+    }
+
     text-align: center;
-    //   padding: 50%;
-    // }
   }
   #third {
-    background-color: black;
+    background-image: url("https://64.media.tumblr.com/6cb0ae44278156aa660d95d55df340de/tumblr_nz14o7t0Z61skcd7fo1_500.gif");
+
     background-size: cover;
     background-repeat: no-repeat;
 
@@ -49,6 +62,11 @@ main {
     //   }
   }
   #fourth {
+    background-image: url("https://64.media.tumblr.com/6cb0ae44278156aa660d95d55df340de/tumblr_nz14o7t0Z61skcd7fo1_500.gif");
+    transform: rotate(180deg);
+    background-size: cover;
+    background-repeat: no-repeat;
+
     //   h1 {
     text-align: center;
     //   }
@@ -85,6 +103,14 @@ main {
         padding: 30%;
         text-align: center;
       }
+      #frontEnd {
+        opacity: 0;
+        animation: drop 0.4s linear forwards 0.2s;
+      }
+      #developer {
+        opacity: 0;
+        animation: drop 0.4s linear forwards 0.2s;
+      }
     }
 
     #second {
@@ -120,6 +146,9 @@ main {
     }
   }
 }
+.big {
+  font-size: xx-large;
+}
 @-webkit-keyframes fade-in {
   0% {
     opacity: 0;
@@ -136,6 +165,25 @@ main {
     opacity: 1;
   }
 }
-.big {
-  font-size: xx-large;
+@keyframes drop {
+  0% {
+    transform: translateY(-200px);
+    opacity: 0;
+  }
+  50% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+  65% {
+    transform: translateY(-17px);
+    opacity: 1;
+  }
+  75% {
+    transform: translateY(-22px);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
 }
