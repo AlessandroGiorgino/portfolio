@@ -10,7 +10,6 @@ import { MainSectionComponent } from './home/main-section/main-section.component
 import { NavbarComponent } from './home/navbar/navbar/navbar.component';
 import { HighlightDirective } from './customDirectives/highlight.directive';
 import { TrackVisibilityDirective } from './customDirectives/track-visibility.directive';
-
 @NgModule({
   declarations: [
     AppComponent,
