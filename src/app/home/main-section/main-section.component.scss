@@ -33,6 +33,10 @@ main {
       opacity: 0;
       animation: drop 3.5s linear forwards 1.5s;
     }
+    #developer {
+      opacity: 0;
+      animation: drop 0.4s linear forwards 0.2s;
+    }
 
     // h1 {
     //   padding: 50%;
@@ -41,12 +45,13 @@ main {
   }
 
   #second {
-    background-image: url("https://64.media.tumblr.com/6cb0ae44278156aa660d95d55df340de/tumblr_nz14o7t0Z61skcd7fo1_500.gif");
-    transform: rotate(180deg);
-    background-size: cover;
-    background-repeat: no-repeat;
+    // background-image: url("https://64.media.tumblr.com/6cb0ae44278156aa660d95d55df340de/tumblr_nz14o7t0Z61skcd7fo1_500.gif");
+    // transform: rotate(180deg);
+    // background-size: cover;
+    // background-repeat: no-repeat
+
+    position: relative;
     .contentContainer {
-      transform: rotate(180deg);
       img {
         width: 50px;
       }
@@ -54,9 +59,23 @@ main {
 
     text-align: center;
   }
+
+  #second::before {
+    content: "";
+    background-image: url("https://64.media.tumblr.com/6cb0ae44278156aa660d95d55df340de/tumblr_nz14o7t0Z61skcd7fo1_500.gif");
+    transform: rotate(180deg);
+    overflow: hidden;
+    z-index: -100;
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 100vh;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-size: 100%;
+  }
   #third {
     background-image: url("https://64.media.tumblr.com/6cb0ae44278156aa660d95d55df340de/tumblr_nz14o7t0Z61skcd7fo1_500.gif");
-
     background-size: cover;
     background-repeat: no-repeat;
 
@@ -65,14 +84,19 @@ main {
     //   }
   }
   #fourth {
-    background-image: url("https://64.media.tumblr.com/6cb0ae44278156aa660d95d55df340de/tumblr_nz14o7t0Z61skcd7fo1_500.gif");
-    transform: rotate(180deg);
-    background-size: cover;
-    background-repeat: no-repeat;
+    // background-image: url("https://64.media.tumblr.com/6cb0ae44278156aa660d95d55df340de/tumblr_nz14o7t0Z61skcd7fo1_500.gif");
+    //  transform: rotate(180deg);
+    //  background-size: cover;
+    //  background-repeat: no-repeat
 
-    //   h1 {
+    position: relative;
+    .contentContainer {
+      img {
+        width: 50px;
+      }
+    }
+
     text-align: center;
-    //   }
   }
 
   .active {
@@ -106,6 +130,10 @@ main {
         padding: 30%;
         text-align: center;
       }
+      #a {
+        opacity: 0;
+        animation: drop 1s linear forwards 0.5s;
+      }
       #frontEnd {
         opacity: 0;
         animation: drop 0.4s linear forwards 0.2s;
@@ -117,10 +145,35 @@ main {
     }
 
     #second {
-      h1 {
-        text-align: center;
-        padding: 30%;
+      // background-image: url("https://64.media.tumblr.com/6cb0ae44278156aa660d95d55df340de/tumblr_nz14o7t0Z61skcd7fo1_500.gif");
+      // transform: rotate(180deg);
+      // background-size: cover;
+      // background-repeat: no-repeat
+
+      position: relative;
+      .contentContainer {
+        // transform: rotate(180deg);
+        img {
+          width: 50px;
+        }
       }
+
+      text-align: center;
+    }
+
+    #second::before {
+      content: "";
+      background-image: url("https://64.media.tumblr.com/6cb0ae44278156aa660d95d55df340de/tumblr_nz14o7t0Z61skcd7fo1_500.gif");
+      transform: rotate(180deg);
+      overflow: hidden;
+      z-index: -100;
+      background-repeat: no-repeat;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      background-size: 100%;
     }
     #third {
       h1 {
@@ -129,10 +182,34 @@ main {
       }
     }
     #fourth {
-      h1 {
-        text-align: center;
-        padding: 30%;
+      //   background-image: url("https://64.media.tumblr.com/6cb0ae44278156aa660d95d55df340de/tumblr_nz14o7t0Z61skcd7fo1_500.gif");
+      //  transform: rotate(180deg);
+      //    background-size: cover;
+      //    background-repeat: no-repeat
+
+      position: relative;
+      .contentContainer {
+        img {
+          width: 50px;
+        }
       }
+
+      text-align: center;
+    }
+
+    #fourth::before {
+      content: "";
+      background-image: url("https://64.media.tumblr.com/6cb0ae44278156aa660d95d55df340de/tumblr_nz14o7t0Z61skcd7fo1_500.gif");
+      transform: rotate(180deg);
+      overflow: hidden;
+      z-index: -100;
+      background-repeat: no-repeat;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      background-size: 100%;
     }
 
     .active {
