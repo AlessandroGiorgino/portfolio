@@ -55,6 +55,28 @@ main {
       img {
         width: 50px;
       }
+      .ball {
+        width: 30px;
+        height: 30px;
+        // background-image: url("../../../assets/tools/angular.png");
+        background-color: red;
+        margin-left: 3rem;
+        border-radius: 50%;
+        animation: drop;
+        position: absolute;
+        top: -400px;
+        animation: dropBalls 4s ease forwards;
+      }
+      #ramp {
+        height: 500px;
+        width: 500px;
+        border: 10px solid green;
+        border-right: none;
+        border-top: none;
+        margin-left: 2rem;
+        margin-top: 2rem;
+        border-bottom-left-radius: 50%;
+      }
     }
 
     text-align: center;
@@ -226,8 +248,9 @@ main {
     }
   }
 }
-.big {
-  font-size: xx-large;
+.dropForBalls {
+  -webkit-animation: dropBall 200ms ease-in;
+  animation: dropBall 3000ms ease-out both;
 }
 @-webkit-keyframes fade-in {
   0% {
@@ -265,5 +288,16 @@ main {
   100% {
     transform: translateY(0px);
     opacity: 1;
+  }
+}
+@keyframes dropBalls {
+  0% {
+    opacity: 0;
+  }
+  70% {
+    transform: translateY(800px);
+  }
+  100% {
+    transform: translateY(650px);
   }
 }
