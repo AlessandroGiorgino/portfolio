@@ -55,10 +55,11 @@ main {
 
     .contentContainer {
       article {
+        border: 2px solid green;
         position: absolute;
         bottom: -15px;
         img {
-          width: 100%;
+          max-height: 50rem;
         }
       }
     }
@@ -110,7 +111,7 @@ main {
     background-image: url("https://64.media.tumblr.com/6cb0ae44278156aa660d95d55df340de/tumblr_nz14o7t0Z61skcd7fo1_500.gif");
     transform: rotate(180deg);
     overflow: hidden;
-    z-index: -100;
+    z-index: -1000;
     background-repeat: no-repeat;
     position: absolute;
     width: 100%;
@@ -118,7 +119,7 @@ main {
     top: 0;
     bottom: 100px;
     left: 0;
-    background-size: 100vh;
+    background-size: 100%;
   }
 
   .active {
@@ -175,6 +176,12 @@ main {
       position: relative;
       .contentContainer {
         // transform: rotate(180deg);
+        position: absolute;
+        bottom: -15px;
+        article {
+          img {
+          }
+        }
       }
 
       text-align: center;
@@ -193,7 +200,7 @@ main {
       top: 0;
       bottom: 100px;
       left: 0;
-      background-size: 100vh;
+      background-size: 100%;
     }
     #third {
       h1 {
@@ -230,7 +237,7 @@ main {
       top: 0;
       bottom: 100px;
       left: 0;
-      background-size: 100vh;
+      background-size: 100%;
     }
 
     .active {

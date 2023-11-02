@@ -29,9 +29,10 @@
       (inViewportAction)="onIntersection($event)"
       class="contentContainer"
     >
-      <article class="h-100">
+      <article class="flex w-full">
         <!-- Cambiare, per adesso mobile first, la foto rimane in posizione bene solo su mobile e tablet -->
-        <img class="h-100" src="../../../assets/me.png" alt="" />
+        <img class="md:w-1/2" src="../../../assets/me.png" alt="" />
+        <div class="hidden sm:w-1/2"><p class="sm:hidden">ciao</p></div>
       </article>
     </div>
   </section>
