@@ -119,7 +119,7 @@ main {
     top: 0;
     bottom: 100px;
     left: 0;
-    background-size: 100%;
+    background-size: 100vh;
   }
 
   .active {
@@ -150,7 +150,7 @@ main {
     }
     #welcome {
       h1 {
-        padding: 30%;
+        padding: 15%;
         text-align: center;
       }
       #a {
