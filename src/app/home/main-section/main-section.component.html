@@ -122,19 +122,171 @@
       <br />
 
       <article
-        class="mt-10 flex flex-col justify-center items-center gap-5 sm:flex-row"
+        class="mt-14 flex flex-col justify-center items-center gap-5 sm:flex-row"
         id="showcase"
       >
         <div
-          class="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
+          class="w-80 max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
         >
-          <a href="#">
+          <!-- <a href="#">
             <img
               class="p-8 rounded-t-lg"
-              src="/docs/images/products/apple-watch.png"
+              src="../../../assets/projects/YouTip/Screenshot 2023-11-06 alle 09.54.47.png"
               alt="product image"
             />
-          </a>
+          </a> -->
+
+          <div
+            id="controls-carousel"
+            class="relative w-full"
+            data-carousel="static"
+          >
+            <!-- Carousel wrapper -->
+            <div class="relative h-56 overflow-hidden rounded-lg">
+              <!-- Item 1 -->
+              <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <img
+                  src="../../../assets/projects/YouTip/1.png"
+                  class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                  alt="..."
+                />
+              </div>
+              <!-- Item 2 -->
+              <div
+                class="hidden duration-700 ease-in-out"
+                data-carousel-item="active"
+              >
+                <img
+                  src="../../../assets/projects/YouTip/2.png"
+                  class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                  alt="..."
+                />
+              </div>
+              <!-- Item 3 -->
+              <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <img
+                  src="../../../assets/projects/YouTip/3.png"
+                  class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                  alt="..."
+                />
+              </div>
+              <!-- Item 4 -->
+              <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <img
+                  src="../../../assets/projects/YouTip/4.png"
+                  class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                  alt="..."
+                />
+              </div>
+              <!-- Item 5 -->
+              <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <img
+                  src="../../../assets/projects/YouTip/5.png"
+                  class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                  alt="..."
+                />
+              </div>
+              <!-- Item 6-->
+
+              <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <img
+                  src="../../../assets/projects/YouTip/6.png"
+                  class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                  alt="..."
+                />
+              </div>
+              <!-- Item 7 -->
+
+              <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <img
+                  src="../../../assets/projects/YouTip/7.png"
+                  class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                  alt="..."
+                />
+              </div>
+              <!-- Item 8 -->
+
+              <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <img
+                  src="../../../assets/projects/YouTip/8.png"
+                  class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                  alt="..."
+                />
+              </div>
+              <!-- Item 9 -->
+
+              <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <img
+                  src="../../../assets/projects/YouTip/9.png"
+                  class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                  alt="..."
+                />
+              </div>
+              <!-- Item 10 -->
+
+              <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <img
+                  src="../../../assets/projects/YouTip/10.png"
+                  class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                  alt="..."
+                />
+              </div>
+            </div>
+            <!-- Slider controls -->
+            <button
+              type="button"
+              class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+              data-carousel-prev
+            >
+              <span
+                class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"
+              >
+                <svg
+                  class="w-4 h-4 text-white dark:text-gray-800"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 6 10"
+                >
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M5 1 1 5l4 4"
+                  />
+                </svg>
+                <span class="sr-only">Previous</span>
+              </span>
+            </button>
+            <button
+              type="button"
+              class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+              data-carousel-next
+            >
+              <span
+                class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"
+              >
+                <svg
+                  class="w-4 h-4 text-white dark:text-gray-800"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 6 10"
+                >
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="m1 9 4-4-4-4"
+                  />
+                </svg>
+                <span class="sr-only">Next</span>
+              </span>
+            </button>
+          </div>
+
           <div class="px-5 pb-5">
             <a href="#">
               <h5
@@ -143,20 +295,52 @@
                 YouTip
               </h5>
             </a>
-            <div class="flex items-center mt-2.5 mb-5"></div>
-            <div class="flex items-center justify-between">
-              <span class="text-3xl font-bold text-gray-900 dark:text-white"
-                >$599</span
+            <div class="flex items-center mt-2.5 mb-5">
+              <p>
+                YouTip is a web app for those who bet on football but want to
+                stop trusting tipsters.
+              </p>
+            </div>
+            <!-- tools used -->
+            <div class="flex justify-center items-center">
+              <div
+                class="flex justify-center items-center gap-1 sm:flex-row sm:gap-2 md:gap-3"
               >
+                <div class="w-14">
+                  <img
+                    class="w-full rounded-full"
+                    src="../../../assets/tools/angular.png"
+                    alt=""
+                  />
+                </div>
+                <div class="w-14">
+                  <img
+                    class="w-full rounded-full"
+                    src="../../../assets/tools/firebase.png"
+                    alt=""
+                  />
+                </div>
+                <div class="w-14">
+                  <img
+                    class="w-full rounded-full"
+                    src="../../../assets/tools/node.png"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="flex justify-end items-end mt-3">
               <a
-                href="#"
+                href="https://youtip-b83d1.web.app/"
+                target="_blank"
                 class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
                 >Check it out!</a
               >
             </div>
           </div>
         </div>
-        <div
+        <!-- card 2 -->
+        <!-- <div
           class="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
         >
           <a href="#">
@@ -246,8 +430,9 @@
               >
             </div>
           </div>
-        </div>
-        <div
+        </div> -->
+        <!-- card 3 -->
+        <!-- <div
           class="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
         >
           <a href="#">
@@ -337,7 +522,7 @@
               >
             </div>
           </div>
-        </div>
+        </div> -->
       </article>
     </div>
   </section>
